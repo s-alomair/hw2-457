@@ -1,52 +1,102 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background-color: #f4f6f9;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #1e3a8a;
-    color: white;
-    padding: 20px;
     text-align: center;
+    padding: 40px 20px;
+    background: #1e3a8a;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+header h2 {
+    font-weight: 400;
+    color: #cbd5e1;
+    margin-top: 10px;
 }
 
 nav {
-    background-color: #2563eb;
-    padding: 10px;
-    text-align: center;
+    background: #2563eb;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #facc15;
 }
 
 main {
-    padding: 30px;
     max-width: 900px;
-    margin: auto;
-    background: white;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 40px auto;
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
-h1, h2 {
-    color: #1e3a8a;
+main h2 {
+    margin-top: 25px;
+    color: #60a5fa;
+}
+
+main ul,
+main ol {
+    margin: 15px 0 15px 20px;
+}
+
+main dl {
+    margin-top: 15px;
+}
+
+main dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+main dd {
+    margin-left: 15px;
+    color: #cbd5e1;
 }
 
 footer {
     text-align: center;
-    padding: 15px;
-    background-color: #1e3a8a;
-    color: white;
+    padding: 20px;
+    background: #0f172a;
     margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
